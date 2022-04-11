@@ -1,0 +1,16 @@
+{
+  "name": "oricontent",
+  "version": "0.0.4",
+  "description": "errors:\r cnt001 => object is exist\r cnt002 => object not found\r cnt003 => wrong property \r cnt004 => invalid property \r cnt005 => reserved property \r cnt006 => access \r cnt007 => wrong name",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "origami",
+    "content",
+    "manager"
+  ],
+  "author": "",
+  "license": "MIT"
+}

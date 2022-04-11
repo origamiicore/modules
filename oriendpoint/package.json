@@ -1,0 +1,52 @@
+{
+  "_from": "oriendpoint",
+  "_id": "oriendpoint@0.0.14",
+  "_inBundle": false,
+  "_integrity": "sha512-aYvIRagN2KtI9kqSDI4rOboOSUTzqFMQ8fqxIY5r7EKwyC6KLQSonNMs7fxy2y7TCNcuB5l7j7YtLVQQ1NGvsg==",
+  "_location": "/oriendpoint",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "oriendpoint",
+    "name": "oriendpoint",
+    "escapedName": "oriendpoint",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/oriendpoint/-/oriendpoint-0.0.14.tgz",
+  "_shasum": "74384713ee8d9eb87a9e86f5272f7d29a1fe4daa",
+  "_spec": "oriendpoint",
+  "_where": "C:\\Projects\\PersianTelos\\games\\argo\\argo-server",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/oriendpoint/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "origami core endpoint",
+  "homepage": "https://github.com/vahidHossaini/oriendpoint#readme",
+  "keywords": [
+    "origami",
+    "endpoint",
+    "express",
+    "socket"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "oriendpoint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/oriendpoint.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.15"
+}

@@ -1,0 +1,50 @@
+{
+  "_from": "oricaptcha",
+  "_id": "oricaptcha@0.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-nPhkj2IXjxl5MfP89miTa4bkuM16jBES3+0hXnaMzFC1JjySOWfEC5P1eSlPQI+BCeh4p12k9OTSZvjDEs2/Xg==",
+  "_location": "/oricaptcha",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "oricaptcha",
+    "name": "oricaptcha",
+    "escapedName": "oricaptcha",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/oricaptcha/-/oricaptcha-0.0.8.tgz",
+  "_shasum": "3ccf4a111922f6260204cbe355a9a54a6d771177",
+  "_spec": "oricaptcha",
+  "_where": "C:\\projects\\3te\\3te-server",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/OriCaptcha/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "origamicore captcha",
+  "homepage": "https://github.com/vahidHossaini/OriCaptcha#readme",
+  "keywords": [
+    "origamicore",
+    "captcha",
+    "recaptcha"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "oricaptcha",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/OriCaptcha.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.10"
+}

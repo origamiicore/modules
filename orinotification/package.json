@@ -1,0 +1,49 @@
+{
+  "_from": "orinotification",
+  "_id": "orinotification@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-ldC1Ev1msGJyr2xpolyDH9wOqYiy8FvWR+NORIzwfQ9KgJB6P6ojOaVej8msoMRLD+fTnl2HNoUqEEMxYolS2Q==",
+  "_location": "/orinotification",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "orinotification",
+    "name": "orinotification",
+    "escapedName": "orinotification",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/orinotification/-/orinotification-0.0.4.tgz",
+  "_shasum": "14707b424f3526363171a4afed1bfd222f8d91fc",
+  "_spec": "orinotification",
+  "_where": "C:\\projects\\3te\\3te-server",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/orinotification/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "origamicore notification",
+  "homepage": "https://github.com/vahidHossaini/orinotification#readme",
+  "keywords": [
+    "origamicore",
+    "notification"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "orinotification",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/orinotification.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.5"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "oriredis",
+  "version": "0.0.7",
+  "description": "origamicore redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/oriredis.git"
+  },
+  "keywords": [
+    "origamicore",
+    "redis"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/oriredis/issues"
+  },
+  "homepage": "https://github.com/vahidHossaini/oriredis#readme",
+  "dependencies": {
+    "redis": "^2.8.0",
+    "uuid": "^3.3.3"
+  }
+}

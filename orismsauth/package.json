@@ -1,0 +1,37 @@
+{
+  "_from": "orismsauth@1.0.5",
+  "_id": "orismsauth@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-AQWm6d4RK2Zd7IIL/rHPL8cFJmIJ6Mtiif3s5sLaZ7uFRTC78J7k705ys0ugf9MsMm/S1oVvgpQtUXRKhDH5cA==",
+  "_location": "/orismsauth",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "orismsauth@1.0.5",
+    "name": "orismsauth",
+    "escapedName": "orismsauth",
+    "rawSpec": "1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "1.0.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/orismsauth/-/orismsauth-1.0.5.tgz",
+  "_shasum": "83c46aab0999e541b9213c38f24f19b4099fdee3",
+  "_spec": "orismsauth@1.0.5",
+  "_where": "C:\\projects\\3te\\3te-server",
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "sms authentication",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "orismsauth",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.7"
+}
