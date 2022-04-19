@@ -218,6 +218,10 @@ module.exports = class paymentConfig
       if(!dx.length)
         return func({m:"cnt004",data:a})
     }
+    if(session.userid)
+    {
+      s.userid=session.userid;
+    }
     if(!s._id)
     {
         s._id=uuid.v1()

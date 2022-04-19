@@ -1,0 +1,49 @@
+{
+  "_from": "oristorage@0.0.2",
+  "_id": "oristorage@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-XxJ2OVCVADmjkA+n288tfmVRUb6ZLo9IYngWdGqEsuBHEPtKx7I2LpM9RuQWOcZL3hqynrmVNB1EzNEXoDft1Q==",
+  "_location": "/oristorage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "oristorage@0.0.2",
+    "name": "oristorage",
+    "escapedName": "oristorage",
+    "rawSpec": "0.0.2",
+    "saveSpec": null,
+    "fetchSpec": "0.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/oristorage/-/oristorage-0.0.2.tgz",
+  "_shasum": "917a00dec823477080edecf82d0fe5c825376c72",
+  "_spec": "oristorage@0.0.2",
+  "_where": "C:\\projects\\3te\\3te-server",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/oristorage/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "origamicore storage",
+  "homepage": "https://github.com/vahidHossaini/oristorage#readme",
+  "keywords": [
+    "origamicore",
+    "storage"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "oristorage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/oristorage.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
+}
