@@ -49,6 +49,7 @@ module.exports={
     time:12,
     dateTime:13,
     password:14,
-    geoLocation:15
+    geoLocation:15,
+    cropedImage:16
   }
 }
