@@ -1,11 +1,17 @@
-//var memory= require("C:\\project\\OrigamiCore\\shareMemory\\index.js").Client
-//var memory= require("sharememory").Client
+ 
 const BinaryFile = require('binary-file');
 var fs=require('fs')
 const fsPromises = require('fs').promises;
 var uuid=require("uuid")
 var redis = require('redis');
 var pathx = require('path');
+function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+  
+function replaceAll(str, find, replace) {
+    return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+}
 class StorageRouting
 {
 	constructor(disc)
@@ -20,46 +26,7 @@ class StorageRouting
 	{  
 		return this.disc.run('storage','localStream',{file,type},func);
 	} 
-}
-class FileWrite
-{
-    constructor()
-    {
-    }
-    async create(srtg,path,mainPath)
-    {
-        //console.log('>>>',mainPath)
-        //console.log('>>>',path)
-        this.fullPath=mainPath+path
-        this.srtg=srtg
-        this.expTime=global.addMin(new Date(),5)
-        this.myBinaryFile = new BinaryFile(mainPath+path, 'w');
-        await this.myBinaryFile.open()   
-    }
-    async write(array,position)
-    {
-        if(array.length+position>this.srtg.size)
-            return false
-        //console.log('---buffer',array)
-        var buf = Buffer.from(array);
-        try
-        {
-            await this.myBinaryFile.write(buf,position)            
-        }
-        catch(exp){
-            return false
-        }
-        return true
-    } 
-    async close()
-    {
-        this.size=await  this.myBinaryFile.size()
-        console.log('=============',this.size)
-         await this.myBinaryFile.close()
-         return 
-    }
-    
-}
+} 
 module.exports = class storage
 {
     constructor(config,dist)
@@ -112,10 +79,12 @@ module.exports = class storage
         //     }
         this.downloads={}    
     } 
+
     createDir(path)
     {
+        path=replaceAll(path,'\\','/')
         if(!fs.existsSync(path))
-            fs.mkdirSync(path)
+            fs.mkdirSync(path,true)
     }
     async getpath(px)
     {
@@ -124,11 +93,11 @@ module.exports = class storage
         var mon=dt.getMonth()+1
         var year=dt.getFullYear()
         var name
-        var p = year+'\\';
+        var p = year+'/';
         this.createDir(px+p)
         if(mon<10)
             p+='0'
-        p+=mon+'\\'
+        p+=mon+'/'
         this.createDir(px+p)
         
         if(day<10)
@@ -146,15 +115,15 @@ module.exports = class storage
             if(flen>0)
             {
                 this.filecount=(flen-1)*this.maxFile                
-            //console.log('-------------2', fs.readdirSync(px+p+'\\'+(flen-1)+'\\'))
-                this.filecount += fs.readdirSync(px+p+'\\'+(flen-1)+'\\').length
+            //console.log('-------------2', fs.readdirSync(px+p+'/'+(flen-1)+'/'))
+                this.filecount += fs.readdirSync(px+p+'/'+(flen-1)+'/').length
             //console.log('-------------2',this.filecount)
             }
             else
             {
                 this.filecount=0
                 this.filecount=0
-                fs.mkdirSync(this.config.path+p+'\\0')
+                this.createDir(this.config.path+p+'/0') 
             }
             //console.log('-------------3_1')
 			if(this.memory)
@@ -180,9 +149,9 @@ module.exports = class storage
         if(this.lastcount!=fol)
         {
             this.lastcount=fol
-            fs.mkdirSync(this.config.path+p+'\\'+this.lastcount)
+            this.createDir(this.config.path+p+'/'+this.lastcount) 
         }
-        return p+'\\'+fol+'\\'+fil
+        return p+'/'+fol+'/'+fil
     }
     getContinue(msg,func,self)
     {
