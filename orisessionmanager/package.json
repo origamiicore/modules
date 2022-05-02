@@ -1,0 +1,53 @@
+{
+  "_from": "orisessionmanager",
+  "_id": "orisessionmanager@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-CuBcUpIDrWEN7kGslYT7HNdGQkX52O4hxNm6HVggiUk70m0K1NMi7HjQUTYQHtvHH6OwJ/MTcOxfmErvEqBhew==",
+  "_location": "/orisessionmanager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "orisessionmanager",
+    "name": "orisessionmanager",
+    "escapedName": "orisessionmanager",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/orisessionmanager/-/orisessionmanager-0.0.4.tgz",
+  "_shasum": "4cb2659e7e8a32fa360048dcab8f6ef8b3e025a6",
+  "_spec": "orisessionmanager",
+  "_where": "C:\\publish\\ala_server",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/orisessionmanager/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
+  "deprecated": false,
+  "description": "origamicore session manager",
+  "homepage": "https://github.com/vahidHossaini/orisessionmanager#readme",
+  "keywords": [
+    "origamicore",
+    "session",
+    "manager"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "orisessionmanager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/orisessionmanager.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.5"
+}
